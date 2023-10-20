@@ -2,3 +2,48 @@ $primary:#08b;
 $secondary:#0a0;
 $background:#111;
 $foreground:#bdbdbd;
+$company:#88A94F;
+main{
+    height: 100vh;
+    width: 100vw;
+}
+.v-header{
+    
+    background-color: white;
+    display: flex;
+}
+.verite{
+    
+}
+.verteil{
+    width: 100px;
+}
+.verteil img{
+    scale: 0.5;
+    color: #08b; //Color not working
+}
+.logo-group img{
+    height: 100px;
+}
+.logo-group{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.logo-group div{
+   
+}
+.letter {
+    font-size: 92px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+#rotate-letter{
+    display: inline-block;
+}
+.letter-wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
