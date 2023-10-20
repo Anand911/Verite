@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP Animation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f3f3f3;
+        }
+
+        .letter {
+            font-size: 72px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+        #rotate-letter{
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="letter" id="verite">VeR<div id="rotate-letter" class="flip">i</div>TE</div>
+    <script>
+        gsap.from("#verite", {
+            y: 100,
+            opacity: 0,
+            duration: 1.5,
+            ease: "power4.out",
+            delay: 0.5
+        });
+
+        gsap.fromTo("#rotate-letter", {
+            rotateX: "0deg"
+        }, {
+            rotateX: "180deg",
+            duration: 1,
+            repeat: -1,
+            yoyo: true,
+            ease: "power1.inOut",
+            transformOrigin: "50% 50%",
+            repeatDelay: 0.5
+        });
+    </script>
+</body>
+
+</html>
