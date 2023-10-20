@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -73,7 +76,9 @@ button:focus-visible {
 #app {
   width: 100%;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
