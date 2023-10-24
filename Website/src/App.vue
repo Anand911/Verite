@@ -1,7 +1,5 @@
 <script setup>
-import Section1 from './components/Home/Section1.vue';
-import Section2 from './components/Home/Section2.vue';
-import Main from './components/Home/Main.vue';
+import Home from './components/Home/Home.vue';
 // import Section1 from './components/Section1.vue';
 </script>
 <style>
@@ -9,9 +7,8 @@ import Main from './components/Home/Main.vue';
 @import './assets/css/index.scss';
 </style>
 <template>
-  <Main/>
- <Section1/>
- <Section2/>
+
+<router-view/>
 
 </template>
 

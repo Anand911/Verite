@@ -5,6 +5,9 @@ $paper-color-black:#1d1d1b;
 $foreground:#bdbdbd;
 $company:#88A94F;
 
+#app{
+    color: $paper-color-black;
+}
 //Added Font-Anand
 $sec-font:'Mori';
 @font-face {
@@ -47,14 +50,13 @@ main{
     background-color: #cdc6be;
     display: flex;
     position: relative;
-    z-index: 1;
+    z-index: 11;
     border-bottom: 1px solid #1d1d1b;
-transition: all 2s cubic-bezier(.65, 0, .35, 1);
-color: $paper-color-black;
- &.active{
-    background-color: #1d1d1b;
     transition: all .4s cubic-bezier(.65, 0, .35, 1);
-z-index: 5;
+    color: $paper-color-black;
+ &.active{
+    // background-color: #1d1d1b;
+    transition: all .4s cubic-bezier(.65, 0, .35, 1);
     .v-head-img{
         opacity: 0;
     }
@@ -209,7 +211,6 @@ button:hover,button:active{
 //section1
 .section1{
     position: relative;
-    top: -135px;
     z-index: 3;
     
 }

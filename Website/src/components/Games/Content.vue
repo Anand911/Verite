@@ -14,6 +14,7 @@
 </style>
 
 <template>
+    <Header/>
     <div class="container">
         <card class="card"
         v-for="(game, index) in games"
@@ -26,11 +27,13 @@
 <script>
 import Card from './Card.vue'
 import games from '../../utils/games.json'
+import Header from '../Navigation/Header.vue';
 
 export default {
     components: {
-        Card,
-    },
+    Card,
+    Header
+},
     data() {
         return {
             games: games,

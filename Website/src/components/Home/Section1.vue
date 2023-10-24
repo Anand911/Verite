@@ -134,7 +134,6 @@ body {
     overflow: hidden;
     height: 100vh;
     position: relative;
-
     color: black ;
 }
 
