@@ -3,14 +3,83 @@ $secondary:#0a0;
 $background:#111;
 $foreground:#bdbdbd;
 $company:#88A94F;
+
+//Added Font-Anand
+$sec-font:'Mori';
+@font-face {
+    font-family: 'Chomsky';
+    src: url('src/assets/fonts/Chomsky-399c.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Editorial';
+    src: url('src/assets/fonts/EditorialNew-Light.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Editorial New';
+    src: url('src/assets/fonts/EditorialNew-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Canopee';
+    src: url('src/assets/fonts/Canopee.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 main{
     height: 100vh;
     width: 100vw;
 }
 .v-header{
     
-    background-color: white;
+    background-color: #cdc6be;
     display: flex;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid #1d1d1b;
+transition: all 2s cubic-bezier(.65, 0, .35, 1);
+ &.active{
+    background-color: #1d1d1b;
+    transition: all .4s cubic-bezier(.65, 0, .35, 1);
+z-index: 5;
+    .v-head-img{
+        opacity: 0;
+    }
+    .v-head{
+        color:#cdc6be ;
+    }
+ }  
+}
+
+.v-head{
+    font-family: Chomsky;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: larger;
+}
+.v-head-img{
+    background-image: url("src/assets/img/texture-bg.jpg") !important;
+    position: absolute;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
 }
 .verite{
     
@@ -29,21 +98,222 @@ main{
     width: 100%;
     height: 100px;
     display: flex;
+    z-index: 5;
+    justify-content: space-between;
+        align-items: center;
 }
 .logo-group div{
    
 }
+.main-wrapper{
+    display: flex;
+    height: 100vh;
+    
+
+    margin: 30px 50px;
+    .main-sec{
+        width: 50%;
+    }
+}
 .letter {
-    font-size: 92px;
+    color: #111;
+    font-size: 12vw;
     font-weight: bold;
-    font-family: Arial, sans-serif;
+    font-family: Canopee,sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 #rotate-letter{
     display: inline-block;
+    width: fit-content;
 }
 .letter-wrapper{
     height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+#section2{
+    font-family: 'Mori';
+}
+.hero-container{
+   position: relative;
+    bottom: 0;
+    right: 0;
+
+    background-image: url("src/assets/img/side-panel.png");
+background-repeat: no-repeat;
+background-size: contain;
+}
+.hero-container img{
+    scale: 1;
+}
+.write-up{
+    font-family: Editorial,sans-serif;
+    color: black;
+    max-width: 95%;
+   
+    font-size: 2.25vw;
+    line-height: 2.7vw;
+    text-align: justify;
+    font-weight: 300;
+
+}
+.sub-head{
+    padding-right: 0;
+        font-size: 3vw;
+    
+       
+        line-height: 4vw;
+    
+        letter-spacing: -.05em;
+        text-transform: uppercase;
+    
+        font-family: Canopee, sans-serif;
+    
+        font-weight: 400;
+}
+button:active,
+button:focus {
+    outline: none;
+
+}
+button:hover,button:active{
+    background-color: rgb(190, 180, 171);
+}
+.btn{
+        font-size: 1vw;
+        width: fit-content;
+        fill: none;
+        background-color: #cdc6be;
+        border: 2.5px solid #000;
+        border-radius: 0.8vw;
+        padding: 0.5vw 0.5vw;
+        border-radius: 0;
+}
+//section1
+.section1{
+    position: relative;
+    top: -135px;
+    z-index: 3;
+    
+}
+.sec-loc
+{
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-bottom: 100px;
+}
+.circle{
+    position: relative;
+    margin: 0 auto;
+    
+   
+    img{
+        height: 185px;
+       
+    }
+}
+.location{
+    position: relative;
+    top: -55px;
+    .about-img{
+        width: 150vw;
+    }
+}
+.about-sec{
+    position: absolute;
+    top: 20vh;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   width: 100%;
+   margin-top: 30px;
+}
+.about-wrapper{
+    width: 50%;
+    display: flex;
     justify-content: center;
+    
+    .write-up{
+
+        
+    }
+    
+}
+
+.about{
+padding-bottom: 2vw;
+font-size: 3vw;
+width: fit-content;
+fill: none;
+stroke: #96B59F;
+stroke-miterlimit: 10;
+color: #cdc6be;
+text-align: left;
+background-color: #1d1d1b;
+padding: 1vw 1vw;
+font-family: Canopee;
+}
+
+.pin
+{
+    border: 1px solid black;
+    padding: 5px;
+    margin: 2px;
+}
+//section2
+
+.banner-text{
+   
+        .button-74 {
+            background-color: #fbeee0;
+            border: 2px solid #422800;
+            border-radius: 5px;
+            box-shadow: #ffffff 4px 4px 0 0;
+            color: #422800;
+            cursor: pointer;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 27px;
+            padding: 0 18px;
+            line-height: 50px;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+        .small-btn{
+            box-shadow: #1a1a1a85 10px 10px 0 0;
+        }
+    
+        .button-74:hover {
+            background-color: #fff;
+        }
+    
+        .button-74:active {
+            box-shadow: #1a1a1a3a 2px 2px 0 0;
+            transform: translate(2px, 2px);
+        }
+    
+        @media (min-width: 768px) {
+            .button-74 {
+                min-width: 120px;
+                padding: 0 25px;
+            }
+        }
+}
+
+.gradient-btn-1{
+    background: linear-gradient(153.58deg, #f7bdf8 32.25%, #2f3cc0 92.68%) !important;
+    color: black !important;
+}
+.gradient-btn-2{
+    background: linear-gradient(111.45deg, #ff8709 19.42%, #f7bdf8 73.08%) !important;
+    color: black !important;
 }

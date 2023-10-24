@@ -1,15 +1,65 @@
 <template>
 
-        <section>
-            <h1>HeaDer</h1>
-        </section>
-        <section id="main-slider-container">
-            <div id="slider-container" class="slider-container" ref="sliderContainer">
-                <div>
-                    <h1>old money</h1>
+        <section class="section1 sec-loc">
+            <div class="circle">
+                <img src="../../assets/svg/Asset 3.svg" alt="" srcset="">
+            </div>
+            <div class="location">
+                <img class="about-img" src="../../assets/svg/Asset4.svg" alt="" srcset="">
+                <div class="about-sec mt-5">
+                     <div class="about-wrapper">
+                        <div class="flex flex-col">
+                            <div class="sub-head">
+                                Lake Side <br>
+                                Bolgatty Palace <br>
+                                PIN: 
+                                <span class="pin">6</span>
+                                <span class="pin">8</span>
+                                <span class="pin">2</span>
+                                <span class="pin">0</span>
+                                <span class="pin">1</span>
+                                <span class="pin">2</span>
+                            </div>
+                            <div class="direct">
+                                <button class="btn mt-[100px]">
+                                    GET DIRECTIONS
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" border-r-[1px] border-black"></div>
+                    <div class="about-wrapper">
+                        <div class="head w-50 flex justify-start flex-col space-y-1 ">
+                        <div class="flex justify-start">
+                            <h1 class=" !text-[5vw] about mr-2">LET'S</h1>
+                            <div>
+                                <img class="h-[8vw]" src="../../assets/img/stamp.png" alt="" srcset="">
+                            </div>
+                        </div>
+                            <h1 class="about !text-[4vw]">CELEBRATE</h1>
+                        </div>
+                    </div>
+                  
                 </div>
-                <div>
-                    <h1>viNtage porschE</h1>
+            </div>
+        </section>
+        <section class="section1" id="main-slider-container">
+            <div id="slider-container" class="slider-container" ref="sliderContainer">
+                <div class="banner-text flex flex-col !items-start p-10">
+                    <div class="flex flex-col w-2/5">
+                        <div class="button-74 !bg-[#fec5fb] w-40 z-10 small-btn">
+                            Embrace
+                        </div>
+                         <div class="button-74 !bg-[#ff8709] !text-[35px] ml-10">
+                                the Vintage Aura
+                            </div>
+                    </div>
+                    <div class="text-[2.5vw] w-3/4 mt-5">
+                        A Retro Ride to the Past, Where Memories Unfold.
+                    </div>
+                </div>
+                <div class="!w-[300vw] banner-text">
+                    <h1 class="about !bg-transparent">Dive into the timeless enchantment of <span class="button-74 small-btn !bg-[#0ae448] !text-[4vw] !text-black rotate-[6.5deg] !p-5">Verité</span> where <span class="button-74 small-btn !p-5 gradient-btn-1 !text-[4vw] relative bottom-10">cherished</span><span class="button-74 small-btn !p-5 gradient-btn-2 !text-[4vw] !shadow-none rotate-[15deg] relative right-5 z-[-1]">memories</span> and vibrant echoes of yesteryears</h1>
                 </div>
                 <div>
                     <h1>cAssette PlayEr</h1>
@@ -22,10 +72,6 @@
                 </div>
             </div>
         </section>
-        <section>
-            <h1>FooTer</h1>
-        </section>
-
 </template>
 
 <script>
@@ -42,7 +88,7 @@ export default {
 
         let windowWidth = window.innerWidth;
         let calculateSliderX =
-            imgSlider.children.length * imgSlider.children[0].offsetWidth - windowWidth;
+            imgSlider.children[0].offsetWidth*3 + imgSlider.children[1].offsetWidth - windowWidth;
 
         let imgSliderTimeline = gsap.timeline({
             default: {
@@ -52,15 +98,17 @@ export default {
                 trigger: imgSliderMain,
                 pin: true,
                 start: 'top top',
-                end: '+=100%',
+                end: '+200%',
                 scrub: 1,
                 invalidateOnRefresh: true,
-                markers:true
+
             },
         });
 
         imgSliderTimeline.to(imgSlider, {
             x: -calculateSliderX,
+            duration: 3,
+            ease: "none",
         });
     },
 };
@@ -72,30 +120,33 @@ export default {
     padding: 0;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 body {
-    font-family: 'Dirtyline 36Daysoftype 2022';
+    font-family: 'Canopee, sans-serif';
 }
 
-section {
+.section1 {
     display: flex;
     width: 100%;
     overflow: hidden;
     height: 100vh;
     position: relative;
-    background-color: oldlace;
-    color: #1a200e ;
+
+    color: black ;
 }
 
 section>h1 {
     font-size: 200px;
     padding: 50px;
 }
-
+#main-slider-container{
+    overflow-x: none;
+}
 .slider-container {
+    background-color: black;
     position: absolute;
     display: flex;
     overflow: hidden;
@@ -103,8 +154,20 @@ section>h1 {
     min-width: 100%;
     width: fit-content;
     align-items: flex-start;
+    border: 2px solid black;
 }
-
+.slider-container::before {
+    content: "";
+     background-image: url("src/assets/img/texture-bg.jpg") !important;
+   /* Adjust the alpha value to set the opacity */
+   position: fixed;
+   opacity: 0.2;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 0;
+}
 .slider-container>div {
     width: 1000px;
     height: 100%;
