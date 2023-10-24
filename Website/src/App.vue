@@ -1,6 +1,4 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import Home from './components/Home/Home.vue';
 import Section1 from './components/Home/Section1.vue';
 import Section2 from './components/Home/Section2.vue';
 import Main from './components/Home/Main.vue';

@@ -25,8 +25,8 @@
          <div class="letter-wrapper main-sec">
                 <div class="letter" id="verite">Vér<div id="rotate-letter" class="flip">i</div>té</div>
 
-                <div class="write-up">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit omnis iusto autem corporis libero vitae enim itaque maiores, eaque minima voluptatum consequuntur laudantium sunt quis veniam accusantium, iste recusandae tempora?
+                <div class="paper-desc text">
+                    In a momentous announcement, Verteil, the trailblazing organization renowned for its innovative initiatives, has unveiled its plans to host the much-anticipated event, promising a nostalgic extravaganza that will transport attendees back to the golden days of yore. Set against a backdrop of retro elegance and timeless charm, this upcoming celebration is poised to enrapture guests with a captivating blend of vintage allure and modern sophistication. Anticipation runs high as the Verteil team gears up to craft an immersive experience that pays homage to the cherished traditions and cultural legacies of a bygone era. Mark your calendars and prepare to be swept away on a sentimental journey through the enchanting tapestry of 'Verite'!
                 </div>
             </div>
             <div class="hero-container main-sec">
