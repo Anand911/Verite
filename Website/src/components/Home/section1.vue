@@ -36,7 +36,7 @@
                                 <img class="h-[8vw]" src="../../assets/img/stamp.png" alt="" srcset="">
                             </div>
                         </div>
-                            <h1 class="about !text-[4vw]">CELEBRATE</h1>
+                            <h1 class="about !text-[4.5vw]">CELEBRATE</h1>
                         </div>
                     </div>
                   

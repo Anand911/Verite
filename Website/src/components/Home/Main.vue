@@ -6,7 +6,7 @@
         <div class="v-head-img"></div>
             <div class="logo-group">
                 <div class="verteil">
-                    <img src="../assets/svg/logo/VERTEIL_LOGO.svg" alt="">
+                    <img src="../../assets/svg/logo/VERTEIL_LOGO.svg" alt="">
                 </div>
                  <div class="v-head">
                     <h2>The Vertil Times</h2>
@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="hero-container main-sec">
-                <img src="../assets/svg/characters/Asset 4.svg" alt="">
+                <img src="../../assets/svg/characters/Asset 4.svg" alt="">
             </div>
        </div>
     </main>
