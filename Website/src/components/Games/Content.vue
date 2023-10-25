@@ -4,10 +4,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100vw;
+    background: red;
 }
 
 .card {
-    background-color: rgb(46, 46, 46);
     width: 80%;
     margin: 10px;
 }
@@ -15,7 +16,8 @@
 
 <template>
     <Header/>
-    <div class="container">
+  <h1 class="m-[40px] text-8xl text-center">Games</h1>
+    <div class="flex flex-col w-screen justify-center items-center">
         <card class="card"
         v-for="(game, index) in games"
         :key="index"

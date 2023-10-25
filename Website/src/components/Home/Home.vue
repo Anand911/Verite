@@ -1,10 +1,8 @@
 <template>
-    
         <Main/>
         <TextMorph/>
      <Section1/>
-     <Section2/>
-     
+     <Section2/>     
 </template>
 
 <script>

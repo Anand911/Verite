@@ -2,10 +2,12 @@
 /* Style the card component */
 .card {
   display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: rgb(41, 43, 43);
+  border: 1px solid black;
+  border-radius: 25px;
+  width: 100%;
+  box-shadow: 0px 0px 35px #0002;
 }
 
 /* Style the image container with overlay text */
@@ -29,19 +31,17 @@
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   padding: 10px;
-  border-radius: 5px;
 }
 
 /* Style the details on the left */
-.card-details-left {
+.card-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  width: 100%;
+  margin-left: 40px;
   text-align: left;
-  margin: 10px;
-}
-
-/* Style the details on the right */
-.card-details-right {
-  text-align: right;
-  margin: 10px;
 }
 
 /* Style the title */
@@ -53,8 +53,18 @@
 /* Style the description */
 .card-description {
   font-size: 16px;
-  margin: 10px 0;
 }
+
+.details-btn{
+  border: 2px solid #222;
+  color: #222;
+  height: 40px;
+}
+.details-btn:hover {
+  background: #222;
+  color: #DDD;
+}
+
 </style>
 
 <template>
@@ -66,13 +76,13 @@
         </div>
 
         <!-- Left-aligned details -->
-        <div class="card-details card-details-left">
+        <div class="card-details">
             <h2 class="card-title">{{ game.name }}</h2>
             <p class="card-description">{{ game.about }}</p>
             <p class="no-of-participants">No. of participants: {{ game.no_of_participants_per_team }}</p>
+            <button class="details-btn" @click="showModal = true">Details</button>
         </div>
 
-        <button @click="showModal = true">Details</button>
 
         <Teleport to="body">
         <!-- use the modal component, pass in the prop -->

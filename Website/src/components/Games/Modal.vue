@@ -6,16 +6,18 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  background: #0006;
   display: flex;
   transition: opacity 0.3s ease;
 }
 
 .modal-container {
-  width: 300px;
+  width: 500px;
   margin: auto;
   padding: 20px 30px;
-  background-color: #fff;
+  background-color: #000;
+  color: #DDD;
   background-image: url("/src/assets/paper-background.jpg");
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
@@ -24,16 +26,18 @@
 
 .modal-header h2 {
   margin-top: 0;
-  color: #42b983;
+  color: #FFF;
 }
 
 .modal-body {
-  color: #1a1a1a;
   margin: 20px 0;
 }
 
 .modal-default-button {
   float: right;
+  border-radius: 0;
+  border: 1px solid #DDD;
+  width: 60px;
 }
 
 /*
