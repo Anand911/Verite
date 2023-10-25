@@ -4,6 +4,7 @@ import App from './App.vue'
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "./components/Home/Home.vue";
 import Games from "./components/Games/Content.vue";
+import Test from "./components/Test.vue";
 const routes = [
     {
         path: '/',
@@ -14,6 +15,11 @@ const routes = [
         path: '/games',
         name: 'Games',
         component: Games
+    },
+    {
+        path:'/test',
+        name:'Test',
+        component:Test
     }
 ]
 const router = createRouter({

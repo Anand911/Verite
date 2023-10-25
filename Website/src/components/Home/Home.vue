@@ -1,6 +1,6 @@
 <template>
     
-        <Main/>
+        <MainClone/>
         <TextMorph/>
      <Section1/>
      <Section2/>
@@ -9,6 +9,7 @@
 
 <script>
 import Main from './Main.vue';
+import MainClone from './MainClone.vue';
 import Section1 from './Section1.vue';
 import Section2 from './Section2.vue';
 import TextMorph from './TextMorph.vue';
@@ -20,7 +21,8 @@ export default {
     Main,
     Section1,
     Section2,
-    TextMorph
+    TextMorph,
+    MainClone
 },
     beforeRouteLeave(to, from, next) {
         // Reset your component's state here
