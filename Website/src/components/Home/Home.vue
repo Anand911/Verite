@@ -1,5 +1,5 @@
 <template>
-      <Main/>
+        <Main/>
      <Section1/>
      <Section2/>
 </template>
@@ -15,7 +15,8 @@ export default {
     components: {
     Main,
     Section1,
-    Section2
+    Section2,
+
 },
     beforeRouteLeave(to, from, next) {
         // Reset your component's state here

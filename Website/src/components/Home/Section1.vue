@@ -59,7 +59,8 @@
                     </div>
                 </div>
                 <div class="!w-[300vw] banner-text">
-                    <h1 class="about !bg-transparent">Dive into the timeless enchantment of <span class="button-74 small-btn !bg-[#0ae448] !text-[4vw] !text-black rotate-[6.5deg] !p-5">Verité</span> where <span class="button-74 small-btn !p-5 gradient-btn-1 !text-[4vw] relative bottom-10">cherished</span><span class="button-74 small-btn !p-5 gradient-btn-2 !text-[4vw] !shadow-none rotate-[15deg] relative right-5 z-[-1]">memories</span> and vibrant echoes of yesteryears</h1>
+                    <img src="../../assets/img/mango-bite.png" alt="aaaa" srcset="" ref="candy">
+                    <h1 class="about !bg-transparent">Dive into the timeless enchantment of <span class="button-74 small-btn !bg-[#0ae448] !text-[4vw] !text-black rotate-[6.5deg] !p-5" ref="verite">Verité</span> where <span class="button-74 small-btn !p-5 gradient-btn-1 !text-[4vw] relative bottom-10">cherished</span><span class="button-74 small-btn !p-5 gradient-btn-2 !text-[4vw] !shadow-none rotate-[15deg] relative right-5 z-[-1]">memories</span> and vibrant echoes of yesteryears</h1>
                 </div>
                 <div>
                     <h1>cAssette PlayEr</h1>
@@ -72,6 +73,7 @@
                 </div>
             </div>
         </section>
+
 </template>
 
 <script>
@@ -82,7 +84,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 export default {
     mounted() {
         gsap.registerPlugin(ScrollTrigger);
-
+        const candy=this.$refs.candy;
         const imgSlider = this.$refs.sliderContainer;
         const imgSliderMain = document.getElementById('main-slider-container');
 
@@ -110,7 +112,66 @@ export default {
             duration: 3,
             ease: "none",
         });
-    },
+        var tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".banner-text",
+                start: "top+=450px ",
+                end: "+=450px",
+                markers:true,
+                // scrub: true,
+                toggleActions: "play none none none"
+            }
+        });
+        const verite=this.$refs.verite;
+        tl.to(verite, {
+            duration: 0.65,
+            rotation: 45,
+            ease: "power2.out"
+        }).from(verite, {
+            rotation: 90,
+            duration: 0.65,
+            delay: -0.65,
+            ease: "power2.out"
+        });
+    
+         // Candy animation to come from top
+         gsap.fromTo(
+            candy,
+            {
+                y: "100%",
+                opacity: 0,
+            },
+            {
+                y: "0%",
+                opacity: 1,
+                duration: 0.5,
+                stagger: 0.2,
+                scrollTrigger: {
+                    trigger: imgSliderMain,
+                    start: "top 30%",
+                    end: "bottom bottom",
+                    scrub: true,
+                },
+            }
+        );
+        const candyAnimation = gsap.to(candy, {
+            scrollTrigger: {
+                trigger: imgSliderMain,
+                start: 'top top',
+                end: 'bottom 30%',
+                scrub: true,
+            },
+            x: 0.9*imgSliderMain.offsetWidth,
+            duration: 5,
+            ease: 'power1.inOut',
+            y: (index) => (index % 2 === 0 ? 50 : -50),
+            rotation: (index) => (index % 2 === 0 ? 360 : -360),
+        });
+
+        const getRandomPosition = () => Math.random() * imgSliderMain.offsetWidth;
+
+        
+    }
 };
 </script>
 
