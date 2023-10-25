@@ -52,6 +52,7 @@ main{
     position: relative;
     z-index: 11;
     border-bottom: 1px solid #1d1d1b;
+
     transition: all .4s cubic-bezier(.65, 0, .35, 1);
     color: $paper-color-black;
  &.active{

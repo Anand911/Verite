@@ -1,3 +1,12 @@
 <template>
-    <h1>test</h1>
+    <Header/>
+    <Content/>
 </template>
+
+<script>
+import Content from './ComingSoon/Content.vue';
+import Header from './Navigation/Header.vue';
+export default{
+    components:{Content,Header}
+}
+</script>

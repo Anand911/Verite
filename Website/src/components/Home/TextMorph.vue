@@ -1,20 +1,44 @@
 <template>
-    <h1 >
+    <h1 ref="font">
         {{ fonts[state].text }}
         
     </h1>
 </template>
 <script>
+import { ref } from 'vue';
+
+
+
 export default{
     data(){
         return {
             fonts: [
                 {
-                    text: "Welcome",
+                    text: "Coming Soon...",
                     font: ""
                 },
                 {
-                    text: "Hello World",
+                    text: "बने रहें...",
+                    font: ""
+                },
+                {
+                    text: "...دیکھتے رہنا",
+                    font: ""
+                },
+                {
+                    text: "காத்திருங்கள்...",
+                    font: ""
+                },
+                {
+                    text: "చూస్తూనే ఉండండి...",
+                    font: ""
+                },
+                {
+                    text: "ಶೀಘ್ರದಲ್ಲೇ ಬರಲಿದೆ...",
+                    font: ""
+                },
+                {
+                    text: "ഉടൻ വരുന്നു...",
                     font: ""
                 }
             ],
@@ -23,8 +47,10 @@ export default{
     },
     mounted()
     {
+        const font =  ref(null);
         const fontInterval=setInterval(() => {
-            this.state=(this.state+1)%this.fonts.length
+            this.state=(this.state+1)%this.fonts.length;
+            font.style.backgroundColor = "#F00";
         }, 3000);
     }
 

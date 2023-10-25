@@ -1,19 +1,19 @@
 <template>
     <div class="nav" ref="menu">
         <div class="menu" >
-            <div class="flex flex-col w-1/2 text-center">
+            <div class="flex flex-col gap-[5px] text-center">
                 
                 <a href="/" class="nav-item" ref="navItem1">
-                    <h1 class="menu-title">HOME</h1>
+                    <h1 class="menu-title">Home</h1>
                 </a>
                 <a href="/games" class="nav-item" ref="navItem2">
-                    <h1 class="menu-title">GAMES</h1>
+                    <h1 class="menu-title">Games</h1>
                 </a>
                 <a href="/" class="nav-item" ref="navItem3">
-                    <h1 class="menu-title">LEADERBOARD</h1>
+                    <h1 class="menu-title">Leaderboard</h1>
                 </a>
                 <a href="/" class="nav-item" ref="navItem4">
-                    <h1 class="menu-title">SCHEDULE</h1>
+                    <h1 class="menu-title">Schedule</h1>
                 </a>
             </div>
         </div>
