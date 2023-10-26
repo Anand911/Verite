@@ -13,18 +13,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Display working directory
-        run: pwd
-
-      - name: List files & folders
-        run: ls -a
-        
-      - name: Change working directory
-        working-directory: ./Website
-        run: ls -a
-
-      - name: Display fwd
-        run: pwd
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
