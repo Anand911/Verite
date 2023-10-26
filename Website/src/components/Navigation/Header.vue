@@ -27,7 +27,7 @@
 import Menu from './Menu.vue';
 
 export default{
-    components:{ Menu, Menu },
+    components:{ Menu},
     beforeRouteLeave(to, from, next) {
         // Reset your component's state here
         console.log(to);
