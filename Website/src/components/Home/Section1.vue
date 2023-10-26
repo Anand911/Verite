@@ -4,25 +4,36 @@
             
             <div class="location">
                
-                <div class="about-sec mt-5">
+                <div class="about-sec">
                      <div class="about-wrapper">
                         <div class="flex flex-col">
-                            <div class="sub-head">
-                                Lake Side <br>
-                                Bolgatty Palace <br>
-                                PIN: 
+                            <div class="sub-head flex flex-col">
+                                <span>Lake Side</span>
+                                <span>Bolgatty Palace</span>
+                            </div>
+                            
+                            <div class="mt-[10px]">
+                                <span class="text-lg">
+                                    <p>Mulavukad, Ernakulam, <br>Kerala, India</p>
+                                </span>
+                            </div>
+
+                            <div class="direct mt-[20px]">
+                                <button class="btn">
+                                    GET DIRECTIONS
+                                </button>
+                            </div>
+                            
+                            <div class="flex mt-[100px] items-center">
+                                <span class="text-3xl mr-[20px]">PIN</span> 
                                 <span class="pin">6</span>
                                 <span class="pin">8</span>
                                 <span class="pin">2</span>
                                 <span class="pin">5</span>
                                 <span class="pin">0</span>
                                 <span class="pin">4</span>
-                            </div>
-                            <div class="direct">
-                                <button class="btn mt-[100px]">
-                                    GET DIRECTIONS
-                                </button>
-                            </div>
+
+                            </div> 
                         </div>
                     </div>
                     <div class=" border-r-[1px] border-black"></div>

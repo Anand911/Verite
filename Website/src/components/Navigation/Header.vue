@@ -9,9 +9,11 @@
                             <img src="../../assets/svg/logo/VERTEIL_LOGO.svg" alt=""/>
                         </div>
                          <div class="v-head">
-                            <h2 class="text-2xl">The Verteil Times</h2>
+                            <a href="/">
+                                <h2 class="text-5xl">The Verteil Times</h2>
+                            </a>
                         </div>
-                         <div class="hamburger" style="margin-right: 0;">
+                         <div class="hamburger cursor-pointer" style="margin-right: 0;">
                             <span class="bar"></span>
                             <span class="bar"></span>
                             <span class="bar"></span>
@@ -22,7 +24,7 @@
         </header>
 </template>
 <script>
-import Menu from './menu.vue';
+import Menu from './Menu.vue';
 
 export default{
     components:{ Menu, Menu },

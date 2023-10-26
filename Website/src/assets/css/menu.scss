@@ -6,6 +6,7 @@
     text-align: center;
     letter-spacing: -.05em;
     font-weight: 400;
+    font-size: 10rem;
     cursor: pointer;
     width: 100%;
 }
@@ -15,7 +16,7 @@
 }
 
 .nav-item h1:hover {
-    animation: menuItemAnimation 4s linear forwards;
+    animation: menuItemAnimation 3s linear forwards;
 }
 
 .menu {
@@ -62,7 +63,9 @@
     }
 
     50% {
-        text-shadow: 0px 0px 50px #FCA6;
+        text-shadow: 0px 0px 200px #BEB5AB,
+                    0px 0px 100px #BEB5AB,
+                    0px 0px 25px #FFFA;
         text-transform: uppercase;
     }
 

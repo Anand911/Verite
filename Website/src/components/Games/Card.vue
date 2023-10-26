@@ -4,10 +4,11 @@
   display: flex;
   align-items: center;
   text-align: center;
-  border: 1px solid black;
+  background-color: #CEC5BB;
   border-radius: 25px;
   width: 100%;
-  box-shadow: 0px 0px 35px #0002;
+  border: 1px solid #DED5CB;
+  box-shadow: -10px 10px 50px #0002;
 }
 
 /* Style the image container with overlay text */
