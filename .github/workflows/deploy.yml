@@ -12,6 +12,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+
+      - name: Display working directory
+        run: pwd
         
       - name: Change working directory
         run: cd Website/
