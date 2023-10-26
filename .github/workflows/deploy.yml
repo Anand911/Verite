@@ -20,9 +20,7 @@ jobs:
         run: ls -a
         
       - name: Change working directory
-        run: cd /home/runner/work/Verite/Verite/Website
-
-      - name: Display working directory
+        working-directory: /home/runner/work/Verite/Verite/Website
         run: pwd
 
       - name: List files & folders
