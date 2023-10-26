@@ -1,6 +1,5 @@
 <template>
-        <Main/>
-        <TextMorph/>
+    <MainClone/>
      <Section1/>
      <Section2/>     
 </template>

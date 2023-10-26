@@ -1,11 +1,9 @@
 <template>
 
         <section class="section1 sec-loc">
-            <div class="circle">
-                <img src="../../assets/svg/Asset 3.svg" alt="" srcset="">
-            </div>
+            
             <div class="location">
-                <img class="about-img" src="../../assets/svg/Asset4.svg" alt="" srcset="">
+               
                 <div class="about-sec mt-5">
                      <div class="about-wrapper">
                         <div class="flex flex-col">
@@ -16,9 +14,9 @@
                                 <span class="pin">6</span>
                                 <span class="pin">8</span>
                                 <span class="pin">2</span>
+                                <span class="pin">5</span>
                                 <span class="pin">0</span>
-                                <span class="pin">1</span>
-                                <span class="pin">2</span>
+                                <span class="pin">4</span>
                             </div>
                             <div class="direct">
                                 <button class="btn mt-[100px]">
@@ -31,12 +29,12 @@
                     <div class="about-wrapper">
                         <div class="head w-50 flex justify-start flex-col space-y-1 ">
                         <div class="flex justify-start">
-                            <h1 class=" !text-[5vw] about mr-2">LET'S</h1>
+                            <h1 class=" !text-[8vw] about mr-2">LET'S</h1>
                             <div>
-                                <img class="h-[8vw]" src="../../assets/img/stamp.png" alt="" srcset="">
+                                <img class="h-[11vw]" src="../../assets/img/stamp.png" alt="" srcset="">
                             </div>
                         </div>
-                            <h1 class="about !text-[4.5vw]">CELEBRATE</h1>
+                            <h1 class="about !text-[8vw]">CELEBRATE</h1>
                         </div>
                     </div>
                   
@@ -240,30 +238,7 @@ section>h1 {
     border: 1px solid black;
 }
 
-.slider-container>div:nth-child(1) {
-    background: url(/img1.jpg) no-repeat center center;
-    background-size: cover;
-}
 
-.slider-container>div:nth-child(2) {
-    background: url(/img2.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.slider-container>div:nth-child(3) {
-    background: url(/img3.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.slider-container>div:nth-child(4) {
-    background: url(/img4.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.slider-container>div:nth-child(5) {
-    background: url(/img5.jpg) no-repeat center center;
-    background-size: cover;
-}
 
 .slider-container>div>h1 {
     font-size: 100px;
