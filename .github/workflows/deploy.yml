@@ -12,6 +12,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        working-directory: ./Website
 
       - name: Display working directory
         run: pwd
@@ -21,10 +22,10 @@ jobs:
         
       - name: Change working directory
         working-directory: ./Website
-        run: pwd
-
-      - name: List files & folders
         run: ls -a
+
+      - name: Display fwd
+        run: pwd
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
@@ -32,9 +33,11 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
+        working-directory: ./Website
         run: npm install
 
       - name: Build the project
+        working-directory: ./Website
         run: npm run build
 
       - name: Deploy to hosting service (e.g., GitHub Pages)
