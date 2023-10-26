@@ -15,9 +15,18 @@ jobs:
 
       - name: Display working directory
         run: pwd
+
+      - name: List files & folders
+        run: ls -a
         
       - name: Change working directory
         run: cd Website/
+
+      - name: Display working directory
+        run: pwd
+
+      - name: List files & folders
+        run: ls -a
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
