@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Main from './Main.vue';
+import MainClone from './MainClone.vue';
 import Section1 from './Section1.vue';
 import Section2 from './Section2.vue';
 import TextMorph from './TextMorph.vue';
@@ -14,7 +14,7 @@ import TextMorph from './TextMorph.vue';
 
 export default {
     components: {
-    Main,
+    MainClone,
     Section1,
     Section2,
     TextMorph,
