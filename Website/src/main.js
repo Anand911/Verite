@@ -7,17 +7,17 @@ import Games from "./components/Games/Content.vue";
 import Test from "./components/Test.vue";
 const routes = [
     {
-        path: '/Verite/',
+        path: '/Verite/Website/',
         name: 'Home',
         component: Home
     },
     {
-        path: '/Verite/games',
+        path: '/Verite/Website/games',
         name: 'Games',
         component: Games
     },
     {
-        path:'/Verite/test',
+        path:'/Verite/Website/test',
         name:'Test',
         component:Test
     }
